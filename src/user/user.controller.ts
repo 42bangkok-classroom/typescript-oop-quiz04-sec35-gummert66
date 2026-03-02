@@ -10,9 +10,4 @@ export class UserController {
   getTest(): any[] {
     return this.userService.test();
   }
-
-  @Get()
-  async findAll(): Promise<IUser[]> {
-    return this.userService.findAll();
-  }
 }
